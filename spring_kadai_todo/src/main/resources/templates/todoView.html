@@ -17,11 +17,11 @@
 	            </tr>
 	        </thead>
 	        <tbody>
-	            <tr th:each="todos : ${todos}">
-	                <td th:text="${todos.getId()}"></td>
-	                <td th:text="${todos.getTitle()}"></td>
-	                <td th:text="${todos.getPriority()}"></td>
-	                <td th:text="${todos.getStatus()}"></td>
+	            <tr th:each="todo : ${todos}">
+	                <td th:text="${todo.getId()}"></td>
+	                <td th:text="${todo.getTitle()}"></td>
+	                <td th:text="${todo.getPriority()}"></td>
+	                <td th:text="${todo.getStatus()}"></td>
 	               
 	            </tr>
 	        </tbody>
